@@ -1,0 +1,35 @@
+OLS SUMMARY
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                      y   R-squared:                       0.537
+Model:                            OLS   Adj. R-squared:                  0.190
+Method:                 Least Squares   F-statistic:                     1.546
+Date:                Thu, 18 Sep 2025   Prob (F-statistic):              0.333
+Time:                        22:13:40   Log-Likelihood:                 32.753
+No. Observations:                   8   AIC:                            -57.51
+Df Residuals:                       4   BIC:                            -57.19
+Df Model:                           3                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+Intercept      1.0155      0.002    503.532      0.000       1.010       1.021
+T_c            0.0017      0.002      0.861      0.438      -0.004       0.007
+RH_c           0.0024      0.002      1.211      0.292      -0.003       0.008
+T_c:RH_c       0.0031      0.002      1.558      0.194      -0.002       0.009
+==============================================================================
+Omnibus:                        1.788   Durbin-Watson:                   2.847
+Prob(Omnibus):                  0.409   Jarque-Bera (JB):                0.031
+Skew:                           0.000   Prob(JB):                        0.985
+Kurtosis:                       3.305   Cond. No.                         1.00
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+
+ANOVA (Type II)
+            sum_sq   df         F    PR(>F)
+T_c       0.000024  1.0  0.741533  0.437729
+RH_c      0.000048  1.0  1.467509  0.292410
+T_c:RH_c  0.000079  1.0  2.428234  0.194168
+Residual  0.000130  4.0       NaN       NaN
